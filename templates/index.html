@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithm DDA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            background: #1e1e1e;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        #controls {
+            width: 160px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: #2a2a2a;
+        }
+
+        #controls label {
+            font-size: 13px;
+        }
+
+        input[type=range] {
+            width: 100%;
+        }
+
+        #color-preview {
+            width: 100%;
+            height: 40px;
+            border-radius: 6px;
+            border: 1px solid #555;
+            background: #ffffff;
+        }
+
+        button {
+            padding: 8px;
+            background: #444;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #666;
+        }
+
+        canvas {
+            background: black;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="controls">
+        <label>Red <span id="r-val">255</span></label>
+        <input type="range" id="r" min="0" max="255" value="255">
+
+        <label>Green <span id="g-val">255</span></label>
+        <input type="range" id="g" min="0" max="255" value="255">
+
+        <label>Blue <span id="b-val">255</span></label>
+        <input type="range" id="b" min="0" max="255" value="255">
+
+        <div id="color-preview"></div>
+
+        <label>Pixel Size <span id="size-val">2</span></label>
+        <input type="range" id="size" min="1" max="20" value="2">
+
+        <button onclick="clearCanvas()">Clear</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="/static/canvas.js"></script>
+</body>
+
+</html>

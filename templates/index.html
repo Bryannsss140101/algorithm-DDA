@@ -4,6 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Algorithm DDA</title>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+    <rect width='100' height='100' fill='black'/>
+    <circle cx='20' cy='80' r='5' fill='white'/>
+    <circle cx='80' cy='20' r='5' fill='white'/>
+    <line x1='20' y1='80' x2='80' y2='20' stroke='white' stroke-width='4'/>
+    </svg>">
+
     <style>
         * {
             margin: 0;
@@ -74,21 +83,21 @@
 <body>
 
     <div id="controls">
-        <label>Red <span id="r-val">255</span></label>
+        <label>🔴 RED <span id="r-val">255</span></label>
         <input type="range" id="r" min="0" max="255" value="255">
 
-        <label>Green <span id="g-val">255</span></label>
+        <label>🟢 GREEN <span id="g-val">255</span></label>
         <input type="range" id="g" min="0" max="255" value="255">
 
-        <label>Blue <span id="b-val">255</span></label>
+        <label>🔵 BLUE <span id="b-val">255</span></label>
         <input type="range" id="b" min="0" max="255" value="255">
 
         <div id="color-preview"></div>
 
-        <label>Pixel Size <span id="size-val">2</span></label>
+        <label>📏 SIZE <span id="size-val">2</span></label>
         <input type="range" id="size" min="1" max="20" value="2">
 
-        <button onclick="clearCanvas()">Clear</button>
+        <button onclick="clearCanvas()">CLEAR</button>
     </div>
 
     <canvas id="canvas"></canvas>

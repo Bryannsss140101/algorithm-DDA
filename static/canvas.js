@@ -1,11 +1,16 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-// Tamaño del canvas
-canvas.width = window.innerWidth - 160;
-canvas.height = window.innerHeight;
-
 let p0 = null;
+
+// Ajustar canvas al tamaño disponible
+function resizeCanvas() {
+    canvas.width = canvas.clientWidth;
+    canvas.height = window.innerHeight;
+}
+
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
 
 // Sliders
 const rSlider = document.getElementById('r');

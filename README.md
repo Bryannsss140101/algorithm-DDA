@@ -5,7 +5,7 @@
 Implementación del algoritmo Digital Differential Analyzer (DDA) para el trazado de líneas en gráficos por computadora.
 
 ### 📜 Tabla de contenido
-1. [Informe](P2__TicTacToe.pdf)
+1. [Informe](P3__DDA.pdf)
 2. [Demo](#-demo)
 3. [Contribuciones](#-contribuciones)
 
